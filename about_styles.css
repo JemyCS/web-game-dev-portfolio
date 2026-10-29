@@ -1,0 +1,34 @@
+/* ABOUT STYLES
+Styles specifically for the About page */
+
+#main-body
+{
+	position: relative;
+
+	margin-left: 15vw;
+	margin-right: 15vw;
+
+	animation: openUp 1.5s;
+}
+
+#profile-pic
+{
+	float: right; 
+	max-width: 30vw; 
+	max-height: 30vw;
+	border-radius: 10px;
+
+	animation: openUp 1s;
+}
+
+@keyframes openUp
+{
+	0% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,108 @@
+/* GLOBAL STYLES
+These styles should remain the same along the entire website.
+Page-specific elements should have a different css file */
+
+body
+{
+	background-color: #030A11;
+	color: white;
+	font-family: "Ubuntu", sans-serif;
+}
+
+header
+{
+	display: flex;
+	justify-content: right;
+
+	width: 65vw;
+	height: 45px; 
+
+	background-color: #0b5394ff; 
+	padding: 5px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+	text-align: right;
+	border: solid;
+	border-color: #0a2239;
+	border-radius: 10px;
+}
+
+#nav-header
+{
+	display: flex;
+	justify-content: right;
+}
+
+footer
+{
+	margin-top: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	height: 100px;
+	background-color: #132e32;
+}
+
+nav
+{
+	font-size: 30px;
+}
+
+p
+{
+	font-size: 20px;
+
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+}
+
+
+button
+{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+
+
+.navLink:link
+{
+	color: #53A2BE;
+	text-decoration: underlined;
+}
+
+.navLink:visited
+{
+	color: white;
+	text-decoration: underlined;
+}
+
+.navLink:hover
+{
+	background-color: rgba(0, 0, 0, .3);
+	text-decoration: underlined;
+}
+
+.divLink:link
+{
+	background-color: rgba(0, 0, 0, .3);
+	color: white;
+	text-decoration: none;
+}
+.divLink:visited
+{	
+	background-color: rgba(0, 0, 0, .3);
+	color: white;
+	text-decoration: none;
+}
+.divLink:hover
+{
+	background-color: rgba(0, 0, 0, .3);
+	color: white;
+	text-decoration: none;
+}
+
+.break {
+	flex-basis: 10%;
+	height: 0;
+}
