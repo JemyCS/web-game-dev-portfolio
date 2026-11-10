@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="global_styles.css">
 	<link rel="stylesheet" href="home_styles.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex">
 </head>
 
 <body>
@@ -38,13 +38,13 @@
 	<!-- Header displaying intro and image -->
 	<div id="intro-header">
 		<!-- Headers for the website -->
-		<div style="display:flex; align-items: flex-start; justify-content: center; margin-left: 80px; flex-direction: column; flex-wrap: wrap; flex: 1;">
+		<div id="intro-text">
 			<h1 style="font-size: 60px; margin-bottom: 1px;">Welcome to Jeremy Chevez's</h1>
 			<p style="font-size: 40px; margin-top: 1px;">Game Dev Portfolio!</p>
 		</div>
 
 		<div style="margin-left: auto; margin-right: 6vw; margin-top: 2vw;">
-			<img src="Assets/ProfileOct.jpg" style="width: 600px; height: 600px; border-radius: 10px">
+			<img src="Assets/ProfileOct.jpg" id="pers_img">
 		</div>
 	</div>
 
@@ -99,5 +99,40 @@
 
 		<p> Thank you for visiting this website! </p>
 	</footer>
+
+	<script>
+		let myImage = document.getElementById("pers_img");
+		let navBar = document.getElementById("nav-header");
+
+		let newsContain = document.getElementById("newsBoard");
+		let aboutContain = document.getElementById("about-me");
+
+		let lowerContain = document.getElementById("containerS2");
+
+		setInterval(function()
+		{
+			console.log(window.screen.availWidth)
+			
+			if(window.screen.availWidth <= 440)
+			{
+				myImage.style.visibility = "hidden";
+				navBar.style.visibility = "hidden";
+
+				newsContain.style.width = "100%";
+				newsContain.style.maxWidth = "100%";
+				aboutContain.style.width = "100%";
+
+				lowerContain.style.flexDirection = "column-reverse";
+			}
+			else
+			{
+				myImage.style.visibility = "visible";
+				navBar.style.visibility = "visible";
+
+				lowerContain.style.flexDirection = "row";
+			}
+		}, 1000)
+		
+	</script>
 </body>
 </html>
