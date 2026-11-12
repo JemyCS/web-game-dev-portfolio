@@ -12,6 +12,11 @@ Styles specifically for the Home page */
 	background-color: #073763ff;
 	color: white;
 	border-radius: 10px;
+ 
+	flex-direction: row;
+
+	flex-wrap: wrap;
+	flex: 1;
 
 	animation-name: openUp;
 	animation-duration: 1s;
@@ -29,10 +34,21 @@ Styles specifically for the Home page */
 	}
 }
 
+#intro-text
+{
+	display:flex; 
+	align-items: flex-start; 
+	justify-content: center; 
+	margin-left: 80px; 
+	flex-direction: column; 
+	flex-wrap: wrap; 
+	flex: 1;
+}
+
 #pers_img
 {
-	width: 30%;
-    max-width: 30%;
+	max-width: 35vw;
+	height: 33vw;
 	border-radius: 10px;
 }
 

@@ -1,6 +1,8 @@
 /* ABOUT STYLES
 Styles specifically for the About page */
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&display=swap');
+
 #main-body
 {
 	position: relative;
@@ -8,7 +10,7 @@ Styles specifically for the About page */
 	margin-left: 15vw;
 	margin-right: 15vw;
 
-	animation: openUp 1.5s;
+	/* animation: openUp 1.5s; */
 }
 
 #profile-pic
@@ -17,8 +19,9 @@ Styles specifically for the About page */
 	max-width: 30vw; 
 	max-height: 30vw;
 	border-radius: 10px;
+	margin-bottom: 2px;
 
-	animation: openUp 1s;
+	/* animation: openUp 1s; */
 }
 
 @keyframes openUp
@@ -30,5 +33,17 @@ Styles specifically for the About page */
 	100%{
 		opacity: 1;
 		transform: scale(1);
+	}
+}
+
+@keyframes textStretchIn
+{
+	from {
+		opacity: 0;
+		font-variation-settings: 'wdth' 125;
+	}
+	to {
+		opacity: 1;
+		font-variantion-settings: 'wdth' 100;
 	}
 }

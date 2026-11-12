@@ -6,7 +6,7 @@ body
 {
 	background-color: #030A11;
 	color: white;
-	font-family: "Ubuntu", sans-serif;
+	font-family: "Google Sans Flex", sans-serif;
 }
 
 header
@@ -24,7 +24,7 @@ header
 	text-align: right;
 	border: solid;
 	border-color: #0a2239;
-	border-radius: 10px;
+	border-radius: 10px
 }
 
 #nav-header
@@ -43,11 +43,6 @@ footer
 	background-color: #132e32;
 }
 
-nav
-{
-	font-size: 30px;
-}
-
 p
 {
 	font-size: 20px;
@@ -56,7 +51,6 @@ p
   	text-overflow: ellipsis; 
 }
 
-
 button
 {
 	background-color: black;
@@ -64,15 +58,25 @@ button
 	font-size: 20px;
 }
 
+.navLink
+{
+	font-size: 30px;
+
+}
 
 .navLink:link
-{
+{	
+
+	background-color: transparent;
 	color: #53A2BE;
 	text-decoration: underlined;
 }
 
 .navLink:visited
 {
+	font-size: 1px;
+
+	background-color: transparent;
 	color: white;
 	text-decoration: underlined;
 }
